@@ -1,0 +1,1 @@
+define("view/vanillaJS/wifi/spec",{vanillaJS:{create:{module:"view/vanillaJS/wifi/main",args:[{$ref:"viewNode"}]}}}),define("view/vanillaJS/wifi/main",[],function(){var e=function(e){this.viewNode=e,this.render()};return e.prototype.render=function(){this.viewNode.innerHTML='<p class="module">Rendered the Vanilla JS "WIFI" view (<code>view/vanillaJS/wifi</code>).</p>'},e});
