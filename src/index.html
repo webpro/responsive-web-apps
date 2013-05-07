@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive Web Apps</title>
+        <link rel="stylesheet" href="http://webpro.github.io/sandbox/site/stylesheet.css">
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+
+        <header>
+            <h1>Responsive Web Apps Demo</h1>
+        </header>
+
+        <div style="text-align:right;">
+            <a href="javascript:document.location.reload();">reload</a>
+        </div>
+
+        <div class="container">
+
+            <div class="box">
+                <h2>Touch (condition)</h2>
+                <p class="info">This module will only be loaded if this device supports touch events.</p>
+                <div data-module="view/vanillaJS" data-condition="touch">
+                    <p>Fallback content (no module was loaded).</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>GPS (condition)</h2>
+                <p class="info">This module will only be loaded if this device supports GPS.</p>
+                <div data-module="view/vanillaJS" data-condition="gps">
+                    <p>Fallback content (no module was loaded).</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>!3G (condition)</h2>
+                <p class="info">This module will only be loaded if NO cell connection (2G/3G/4G) was detected.</p>
+                <div data-module="view/vanillaJS" data-condition="!cell">
+                    <p>Fallback content (no module was loaded).</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>WIFI (extend)</h2>
+                <p class="info">The extended version of this module will be loaded if WIFI was detected, otherwise the default version.</p>
+                <div data-module="view/vanillaJS" data-extend="wifi">
+                    <p>Fallback content (no module was loaded).</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>Large (extend)</h2>
+                <p class="info">The extended version of this module will be loaded for <code>large</code> screens (e.g. <code>min-width: 1200px</code>), otherwise the default version.</p>
+                <div data-module="view/backboneView" data-extend="large">
+                    <p>Fallback content (no module was loaded).</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>Media query (matchMedia)</h2>
+                <p class="info">This module will only be loaded if media query applies: <code>screen and (max-width:1200px)</code>.</p>
+                <div data-module="view/vanillaJS" data-matchMedia="screen and (max-width:1200px)">
+                    <p>Fallback content (no module was loaded).</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>Element query (matchMediaElement)</h2>
+                <p class="info">This module will only be loaded if element query applies: <code>(min-width:800px)</code>.</p>
+                <div data-module="view/vanillaJS" data-matchMediaElement="(min-width:800px)">
+                    <p>Fallback content (no module was loaded).</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>Default</h2>
+                <p class="info">This module should just load.</p>
+                <div data-module="view/mariaView">
+                    <p>Fallback content (no module was loaded).</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!--
+            For development on desktop, this points to android/cordova-2.5.0.js (symlink).
+            This file (not this script tag) automatically gets replaced with a device specific version by PhoneGap Build.
+        -->
+        <script src="cordova.js"></script>
+
+        <script>
+            if(window.location.hash === '#dev') {
+                document.write('<script data-main="main.dev" src="../lib/requirejs/require.js"><\/script>');
+            } else {
+                // In the optimized version, main.js has require.js built-in
+                document.write('<script src="main.js"><\/script>');
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+{
+    "name": "responsive-web-apps",
+    "version": "0.0.1",
+    "dependencies": {},
+    "devDependencies": {
+        "grunt": "~0.4.1",
+        "grunt-contrib-requirejs": "~0.4"
+    }
+}

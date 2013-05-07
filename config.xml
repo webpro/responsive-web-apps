@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="nl.webpro.responsive-hybrid-web-apps" version="dev">
+
+	<name>Responsive &amp; Hybrid Web Apps</name>
+
+	<description>Responsive &amp; Hybrid Web Apps</description>
+
+	<author href="http://webpro.nl" email="lars@webpro.nl">Lars Kappert</author>
+
+	<content src="dist/index.html"/>
+
+	<access origin="*"/>
+
+	<preference name="phonegap-version" value="2.5.0" />
+
+	<preference name="target-device" value="universal" />
+	<preference name="orientation" value="default"/>
+	<preference name="fullscreen" value="false" />
+
+	<preference name="webviewbounce" value="true" />
+	<preference name="prerendered-icon" value="false" />
+
+	<feature name="http://api.phonegap.com/1.0/network"/>
+
+</widget>

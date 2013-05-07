@@ -1,0 +1,62 @@
+@media all and (max-width: 1199px) {
+    body:after {
+        content: 'small';
+        display: none;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    body:after {
+        content: 'large';
+        display: none;
+    }
+}
+
+.container {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    justify-content: space-around;
+    max-width: 100%;
+}
+
+.box {
+    -webkit-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    max-width: 100%;
+    border: 1px solid #CCC;
+    margin: 10px;
+    background-color: #f4f4f4;
+    -webkit-box-shadow: 3px 3px 3px #CCC;
+    -moz-box-shadow: 3px 3px 3px #CCC;
+    box-shadow: 3px 3px 3px #CCC;
+}
+
+h2 {
+    background-color: #ddd;
+    color: #F68A22;
+    margin: 0;
+    padding: 0.5em;
+}
+
+p {
+    margin: 0.9em 5px;
+}
+
+.info {
+    font-size: 87.5%;
+    font-style: italic;
+}
+
+.module:before {
+    content: "o_O ";
+    color: #F68A22;
+}

@@ -1,0 +1,14 @@
+{
+    "name": "responsive-web-apps",
+    "version": "0.0.1",
+    "dependencies": {
+        "requirejs": "~2.1",
+        "jquery": "~2.0",
+        "backbone": "~1.0",
+        "lodash": "~1.0",
+        "when": "~2",
+        "wire": "~0.9",
+        "meld": "~1.2",
+        "phonegap": "2.5.0"
+    }
+}

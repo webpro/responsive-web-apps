@@ -1,0 +1,1 @@
+../lib/phonegap/lib/android/cordova-2.5.0.js
