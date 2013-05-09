@@ -1,7 +1,7 @@
 {
-    "name": "Responsive Web Apps",
+    "name": "Responsive &amp; Hybrid Web Apps Demo",
     "version": "0.0.1",
-    "description": "Responsive Web Apps",
+    "description": "Responsive &amp; Hybrid Web Apps Demo",
     "launch_path": "/responsive-web-apps/dist/index.html",
     "installs_allowed_from": ["*"],
     "permissions": {},

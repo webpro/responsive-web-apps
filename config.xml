@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="nl.webpro.responsive-hybrid-web-apps" version="dev">
 
-	<name>Responsive &amp; Hybrid Web Apps</name>
+	<name>Responsive &amp; Hybrid Web Apps Demo</name>
 
-	<description>Responsive &amp; Hybrid Web Apps</description>
+	<description>Responsive &amp; Hybrid Web Apps Demo</description>
 
 	<author href="http://webpro.nl" email="lars@webpro.nl">Lars Kappert</author>
 
