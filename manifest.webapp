@@ -2,7 +2,7 @@
     "name": "Responsive Web Apps",
     "version": "0.0.1",
     "description": "Responsive Web Apps",
-    "launch_path": "dist/index.html",
+    "launch_path": "/responsive-web-apps/dist/index.html",
     "installs_allowed_from": ["*"],
     "permissions": {},
     "developer": {
