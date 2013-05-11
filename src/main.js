@@ -7,6 +7,9 @@ require.config({
         'backbone': {
             'deps': ['lodash', 'jquery'],
             'exports': 'Backbone'
+        },
+        'flight/lib/component': {
+            'deps': ['jquery']
         }
     },
     paths: {
@@ -14,7 +17,8 @@ require.config({
         'lodash': '../lib/lodash/dist/lodash.min',
         'backbone': '../lib/backbone/backbone-min',
         'maria.orig': 'lib/maria-amd',
-        'maria': 'lib/maria.extensions'
+        'maria': 'lib/maria.extensions',
+        'flight': '../lib/flight'
     },
     map: {
         '*': {

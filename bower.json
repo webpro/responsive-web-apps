@@ -9,6 +9,7 @@
         "when": "~2",
         "wire": "~0.9",
         "meld": "~1.2",
-        "phonegap": "2.5.0"
+        "phonegap": "2.5.0",
+        "flight": "~1.0.8"
     }
 }

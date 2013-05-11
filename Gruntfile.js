@@ -37,6 +37,10 @@ module.exports = function(grunt) {
                         name: 'view/mariaView/spec',
                         include: ['view/mariaView/main'],
                         exclude: ['maria']
+                    }, {
+                        name: 'view/flightView/spec',
+                        include: ['view/flightView/main'],
+                        exclude: ['core/composer', 'jquery']
                     }]
                 }
             }

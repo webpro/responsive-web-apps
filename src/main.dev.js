@@ -16,4 +16,9 @@ require(['main'], function() {
         ]
     });
 
+    require(['flight/tools/debug/debug'], function(debug) {
+        debug.enable(true);
+        debug.events.logAll();
+    })
+
 });
