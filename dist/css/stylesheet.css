@@ -12,25 +12,10 @@
     }
 }
 
-.container {
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-justify-content: space-around;
-    -moz-justify-content: space-around;
-    -ms-justify-content: space-around;
-    justify-content: space-around;
-    max-width: 100%;
-}
-
 .box {
-    -webkit-flex: auto;
-    -ms-flex: auto;
-    flex: auto;
+    display:inline-block;
+    vertical-align:top;
+    width: 400px;
     max-width: 100%;
     border: 1px solid #CCC;
     margin: 10px;
@@ -59,4 +44,10 @@ p {
 .module:before {
     content: "o_O ";
     color: #F68A22;
+}
+
+@media all and (max-width: 640px) {
+    .hidden-small {
+        display: none;
+    }
 }
