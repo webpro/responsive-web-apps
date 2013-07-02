@@ -1,4 +1,4 @@
-define({
+define(['view/vanillaJS/wifi/main'], {
 
     vanillaJS: {
         create: {

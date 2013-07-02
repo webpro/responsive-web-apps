@@ -1,4 +1,4 @@
-define({
+define(['view/backboneView/main'], {
 
     backboneView: {
         create: {

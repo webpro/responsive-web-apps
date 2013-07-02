@@ -19,27 +19,21 @@ module.exports = function(grunt) {
                         include: ['requireLib', 'backbone', 'maria']
                     }, {
                         name: 'view/vanillaJS/spec',
-                        include: ['view/vanillaJS/main'],
                         exclude: ['core/composer']
                     }, {
                         name: 'view/vanillaJS/wifi/spec',
-                        include: ['view/vanillaJS/wifi/main'],
                         exclude: ['core/composer']
                     }, {
                         name: 'view/backboneView/spec',
-                        include: ['view/backboneView/main'],
                         exclude: ['backbone']
                     }, {
                         name: 'view/backboneView/large/spec',
-                        include: ['view/backboneView/large/main'],
                         exclude: ['backbone']
                     }, {
                         name: 'view/mariaView/spec',
-                        include: ['view/mariaView/main'],
                         exclude: ['maria']
                     }, {
                         name: 'view/flightView/spec',
-                        include: ['view/flightView/main'],
                         exclude: ['core/composer', 'jquery']
                     }]
                 }

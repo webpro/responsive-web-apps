@@ -1,4 +1,4 @@
-define({
+define(['view/flightView/main'], {
 
     flightView: {
         create: {

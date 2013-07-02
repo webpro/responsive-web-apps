@@ -1,4 +1,4 @@
-define({
+define(['view/mariaView/main'], {
 
     mariaView: {
         create: {
