@@ -45,3 +45,9 @@ p {
     content: "o_O ";
     color: #F68A22;
 }
+
+@media all and (max-width: 640px) {
+    .hidden-small {
+        display: none;
+    }
+}
