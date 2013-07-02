@@ -45,7 +45,7 @@ define(['core/advisor', 'wire'], function(advisor, wire) {
                 moduleLocationExtend =+ advisor.hasMatch(extend) ? '/' + extend : '',
                 specId = moduleLocation + moduleLocationExtend + '/spec';
 
-            wire([specId, { viewNode: element }]);
+            wire([specId, { viewNode: { literal: element }}]);
 
         }
 
